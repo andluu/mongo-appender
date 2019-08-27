@@ -73,8 +73,8 @@ public class MongoAppender extends AbstractAppender {
 			@PluginAttribute("ignoreExceptions") boolean ignoreExceptions,
 			@PluginElement("Filter") Filter filter,
 			@PluginAttribute("mongoUrl") String mongoUrl,
-			@PluginAttribute("mongoUrl") String mongoDb,
-			@PluginAttribute("mongoUrl") String mongoCollection) {
+			@PluginAttribute("mongoDb") String mongoDb,
+			@PluginAttribute("mongoCollection") String mongoCollection) {
 
 		if (name == null) {
 			LOGGER.error("No name provided for MongoAppender");

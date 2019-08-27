@@ -15,6 +15,7 @@ public class MongoSearchTests {
 
 	@Test
 	public void search_correctSearchQuerySentToCollection() {
+
 		MongoCollection logCollectionMock = mock(MongoCollection.class);
 		when(logCollectionMock.find(any(Bson.class))).thenReturn(mock(FindIterable.class));
 		search.setLogCollection(logCollectionMock);
