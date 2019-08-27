@@ -1,0 +1,11 @@
+<Configuration status="warn" packages="schednie">
+    <Appenders>
+        <MongoAppender name="myapp" mongoUrl="mongodb://coral:coral@localhost">
+        </MongoAppender>
+    </Appenders>
+    <Loggers>
+        <Root level="all" additivity="false">
+            <AppenderRef ref="myapp"/>
+        </Root>
+    </Loggers>
+</Configuration>
